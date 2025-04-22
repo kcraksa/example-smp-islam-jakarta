@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMP Islam Jakarta</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .fade-in {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-out forwards;
+      }
+
+      @keyframes fadeIn {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .transition-header {
+        transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-800 font-sans leading-relaxed">
+    <!-- Header -->
+    <header
+      id="navbar"
+      class="fixed top-0 left-0 w-full z-50 transition-header bg-transparent text-white"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-3">
+          <img
+            src="https://placehold.co/40x40?text=SMP"
+            alt="Logo Sekolah"
+            class="rounded-full bg-white p-1 w-10 h-10"
+          />
+          <h1 class="text-xl font-bold">SMP Islam Jakarta</h1>
+        </div>
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+          <a href="#tentang" class="hover:underline">Tentang</a>
+          <a href="#fitur" class="hover:underline">Fitur</a>
+          <a href="#testimoni" class="hover:underline">Testimoni</a>
+          <a href="#galeri" class="hover:underline">Galeri</a>
+          <a href="#kontak" class="hover:underline">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero / Jumbotron -->
+    <section
+      class="relative h-screen bg-cover bg-center flex items-center justify-center text-white fade-in"
+      style="background-image: url('https://unsplash.it/1600/900?image=1002')"
+    >
+      <div class="absolute inset-0 bg-black/60"></div>
+      <div class="relative z-10 text-center px-6 max-w-2xl">
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-md">
+          Selamat Datang di SMP Islam Jakarta
+        </h2>
+        <p class="text-lg md:text-xl mb-6 text-gray-100">
+          Membentuk generasi Islam yang unggul, berkarakter, dan cerdas di
+          tengah Ibukota.
+        </p>
+        <a
+          href="#tentang"
+          class="bg-white text-green-700 px-6 py-3 rounded-full font-semibold shadow hover:bg-gray-100 transition"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-20 bg-white fade-in">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6">Tentang Kami</h3>
+        <p class="text-gray-600 text-lg md:text-xl">
+          SMP Islam Jakarta adalah lembaga pendidikan Islam yang berlokasi di
+          Jakarta. Kami mengintegrasikan pendidikan akademik dan keislaman untuk
+          menciptakan generasi muslim yang siap menghadapi tantangan zaman.
+        </p>
+      </div>
+    </section>
+
+    <!-- Fitur -->
+    <section id="fitur" class="bg-gray-100 py-20 fade-in">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Fitur Unggulan
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 text-center"
+          >
+            <img
+              src="https://unsplash.it/400/250?image=1067"
+              alt="Fitur 1"
+              class="rounded-lg mb-4 mx-auto"
+            />
+            <h4 class="font-semibold text-lg mb-2">Kurikulum Islam Terpadu</h4>
+            <p class="text-gray-600 text-sm">
+              Pembelajaran agama dan akademik yang terintegrasi dalam kegiatan
+              harian.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 text-center"
+          >
+            <img
+              src="https://unsplash.it/400/250?image=1033"
+              alt="Fitur 2"
+              class="rounded-lg mb-4 mx-auto"
+            />
+            <h4 class="font-semibold text-lg mb-2">Fasilitas Modern</h4>
+            <p class="text-gray-600 text-sm">
+              Ruang kelas multimedia, perpustakaan digital, laboratorium sains &
+              komputer.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 text-center"
+          >
+            <img
+              src="https://unsplash.it/400/250?image=1021"
+              alt="Fitur 3"
+              class="rounded-lg mb-4 mx-auto"
+            />
+            <h4 class="font-semibold text-lg mb-2">Pembinaan Karakter</h4>
+            <p class="text-gray-600 text-sm">
+              Tahfidz, kegiatan sosial, dan mentoring akhlak untuk pembentukan
+              karakter islami.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="bg-white py-20 fade-in">
+      <div class="max-w-5xl mx-auto px-4 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6">Testimoni Alumni</h3>
+        <div class="flex justify-center space-x-8">
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg max-w-xs">
+            <p class="text-gray-600 text-lg mb-4">
+              "SMP Islam Jakarta memberikan pendidikan yang sangat baik dan
+              membentuk karakter kami sebagai generasi yang unggul."
+            </p>
+            <p class="font-semibold">Ahmad, Alumni 2023</p>
+          </div>
+          <div class="bg-gray-100 p-6 rounded-lg shadow-lg max-w-xs">
+            <p class="text-gray-600 text-lg mb-4">
+              "Saya merasa bangga menjadi bagian dari SMP Islam Jakarta.
+              Fasilitas yang lengkap mendukung saya untuk berkembang."
+            </p>
+            <p class="font-semibold">Aisyah, Alumni 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeri -->
+    <section id="galeri" class="bg-gray-100 py-20 fade-in">
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold mb-12">Galeri Kegiatan</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://unsplash.it/400/300?image=1037"
+              alt="Galeri 1"
+              class="w-full h-48 object-cover"
+            />
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://unsplash.it/400/300?image=1040"
+              alt="Galeri 2"
+              class="w-full h-48 object-cover"
+            />
+          </div>
+          <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <img
+              src="https://unsplash.it/400/300?image=1045"
+              alt="Galeri 3"
+              class="w-full h-48 object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-20 bg-white fade-in">
+      <div class="max-w-4xl mx-auto px-4 text-center">
+        <h3 class="text-3xl md:text-4xl font-bold mb-6">Hubungi Kami</h3>
+        <p class="text-gray-700 mb-3">
+          📍 Jl. Pendidikan No. 123, Jakarta Selatan
+        </p>
+        <p class="text-gray-700 mb-3">📞 (021) 1234-5678</p>
+        <p class="text-gray-700">📧 info@smpislamjakarta.sch.id</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-700 text-white text-center py-5 fade-in">
+      <p class="text-sm">&copy; 2025 SMP Islam Jakarta. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll Header Effect -->
+    <script>
+      const navbar = document.getElementById("navbar");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add(
+            "backdrop-blur-md",
+            "bg-white/70",
+            "text-green-800",
+            "shadow"
+          );
+          navbar.classList.remove("text-white");
+        } else {
+          navbar.classList.remove(
+            "backdrop-blur-md",
+            "bg-white/70",
+            "text-green-800",
+            "shadow"
+          );
+          navbar.classList.add("text-white");
+        }
+      });
+    </script>
+  </body>
+</html>
